@@ -1,14 +1,34 @@
 ﻿@{
     Layout = null;
     ViewData["Title"] = "Pizza Home Page";
-    string[] pizzas = ["Magherita", "Marinara", "Napoli", "Wurstel", "Salamino piccante", "Maialona"];
-    string[] descriptions = ["Pizza con pomodoro, mozzarella e basilico", "Pizza con pomodoro, olio e aglio", "Pizza napoletana", "pizza con pomodoro", "mozzarella e wurtel", "Pizza con pomodoro, mozzarella e salamino piccante", "Pizza margherita con wurstel, salsiccia, salamino picccante"];
-    string[] pictures = ["https://www.google.it/url?sa=i&url=https%3A%2F%2Fit.wikipedia.org%2Fwiki%2FPizza_Margherita&psig=AOvVaw2yfOPbuYW7ray-OyBSqNHv&ust=1664887470318000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCPDtwaWLxPoCFQAAAAAdAAAAABAD", "https://www.google.it/imgres?imgurl=https%3A%2F%2Fwww.buttalapasta.it%2Fwp-content%2Fuploads%2F2021%2F03%2Fpizza-marinara.jpg&imgrefurl=https%3A%2F%2Fwww.buttalapasta.it%2Fricette%2Fricetta-pizza-marinara%2F152704%2F&tbnid=VYMt8eZ1-R9mGM&vet=12ahUKEwiMr7zzi8T6AhWBGewKHQ47AA4QMygGegUIARD7AQ..i&docid=x7odb2YXMduMGM&w=1200&h=800&q=pizza%20marinara&ved=2ahUKEwiMr7zzi8T6AhWBGewKHQ47AA4QMygGegUIARD7AQ", "https://www.google.it/imgres?imgurl=https%3A%2F%2Fwips.plug.it%2Fcips%2Fbuonissimo.org%2Fcms%2F2012%2F07%2Fpizza-napoli-5.jpg&imgrefurl=https%3A%2F%2Fwww.buonissimo.it%2Flericette%2F5878_Pizza_Napoli&tbnid=jROsfMiE9ysfwM&vet=12ahUKEwiu8OiNjMT6AhXhgaQKHcihBX8QMygAegUIARDhAQ..i&docid=5CncFsHm9UgNkM&w=1217&h=694&q=pizza%20napoli&ved=2ahUKEwiu8OiNjMT6AhXhgaQKHcihBX8QMygAegUIARDhAQ", "https://www.google.it/imgres?imgurl=https%3A%2F%2Fwww.lospicchiodaglio.it%2Fimg%2Fricette%2Fpizzawurstel.jpg&imgrefurl=https%3A%2F%2Fwww.lospicchiodaglio.it%2Fricetta%2Fpizza-wurstel&tbnid=DII4KyDUg-SWmM&vet=12ahUKEwjd56SnjMT6AhXG_aQKHfz-DNsQMygAegUIARDZAQ..i&docid=w4d3CgFojZw5eM&w=961&h=638&q=pizza%20wurstel&ved=2ahUKEwjd56SnjMT6AhXG_aQKHfz-DNsQMygAegUIARDZAQ", "https://www.google.it/imgres?imgurl=https%3A%2F%2Fapi.molinocasillo.com%2Fwp-content%2Fuploads%2F2020%2F07%2Fpizza.jpg&imgrefurl=https%3A%2F%2Fwww.molinocasillo.com%2Frecipe%2Fpizza-con-salame-piccante&tbnid=OjW3CgT6LAykyM&vet=12ahUKEwiNq4q5jMT6AhXRsaQKHXLEBtMQMygCegUIARDPAQ..i&docid=-r9zl_2UNlVD6M&w=1600&h=1067&q=pizza%20salame%20piccante&ved=2ahUKEwiNq4q5jMT6AhXRsaQKHXLEBtMQMygCegUIARDPAQ", "https://www.google.it/imgres?imgurl=https%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F13%2Fa4%2F63%2Ff8%2Fpizza-maialona.jpg&imgrefurl=https%3A%2F%2Fwww.tripadvisor.it%2FLocationPhotoDirectLink-g187895-d716427-i329540600-Ristorante_Pizzeria_Trattoria_La_Carabaccia_Firenze-Florence_Tuscany.html&tbnid=jbHqCQCC0Ey2dM&vet=12ahUKEwjMyY7mjMT6AhWJiqQKHea_BEcQMygCegUIARCyAQ..i&docid=nFsb_0EnxqcBJM&w=550&h=413&q=pizza%20maialona&ved=2ahUKEwjMyY7mjMT6AhWJiqQKHea_BEcQMygCegUIARCyAQ"];
-    string[] prices = ["5", "4", "6,50", "6", "6", ""];
+    string[] pizzas = { "Magherita", "Marinara", "Napoli", "Wurstel", "Salamino piccante", "Maialona" };
+    string[] descriptions = { "Pizza con pomodoro, mozzarella e basilico", "Pizza con pomodoro, olio e aglio", "Pizza napoletana", "pizza con pomodoro", "mozzarella e wurtel", "Pizza con pomodoro, mozzarella e salamino piccante", "Pizza margherita con wurstel, salsiccia, salamino picccante" };
+    string[] pictures = { "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Pizza_Margherita_stu_spivack.jpg/1280px-Pizza_Margherita_stu_spivack.jpg", "https://www.buttalapasta.it/wp-content/uploads/2021/03/pizza-marinara.jpg", "https://wips.plug.it/cips/buonissimo.org/cms/2012/07/pizza-napoli-5.jpg", "https://www.lospicchiodaglio.it/img/ricette/pizzawurstel.jpg", "https://api.molinocasillo.com/wp-content/uploads/2020/07/pizza.jpg", "https://media-cdn.tripadvisor.com/media/photo-s/13/a4/63/f8/pizza-maialona.jpg"};
+    string[] prices = { "5", "4", "6,50", "6", "6", "7" };
 }
 
 <div class="text-center">
-    <h1>Le mie pizze</h1>
+    <h1>Oh what a splendid pie, pizza pizza pie!!!</h1>
 
-
+   <table>
+        <tr>
+            <th>Pizza name</th>
+            <th>Description</th>
+            <th>Pictures</th>
+            <th>Prices</th>
+        </tr>
+       
+        @for (var i = 0; i < pizzas.Length; i++)
+        {
+            <tr>
+                <td>@pizzas[i]</td>
+                <td>@descriptions[i]</td>
+                <td>
+                    <img style="width: 150px; height: 100px;" src="@Url.Content(pictures[i])" alt="pizza-image">
+                </td>
+                <td>@prices[i]</td>
+            </tr>
+        }
+    </table>
 </div>
+ 
